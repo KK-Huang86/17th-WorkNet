@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django_htmx",
     "apps.posts",
     "apps.users",
+    "apps.notifications",
     "social_django",
 ]
 
