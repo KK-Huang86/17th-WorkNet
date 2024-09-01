@@ -1,3 +1,6 @@
-{%extends "layouts/base.html"%} {%block content%} {% if notifications %} {%for
-notification in notifications %} {% notification.title %} {%endfor%}{%endif%}
-{%endblock%}
+{% extends "layouts/base.html" %} {% block content %} {% if notifications %}
+{%for notification in notifications %}
+<p>{{ notification.title }}</p>
+{% endfor %} {% else %}
+<p>没有通知</p>
+{% endif %} {% endblock %}

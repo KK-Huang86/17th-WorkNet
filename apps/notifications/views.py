@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def notifications_list(request):
-    # 所有的通知，並按照時間的新舊順序排列
+    # 列出所有的通知，並按照時間的新舊順序排列
     notifications = Notification.objects.filter(user=request.user).order_by(
         "-created_at"
     )
