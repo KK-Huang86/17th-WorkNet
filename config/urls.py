@@ -23,5 +23,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("apps.users.urls")),
     path("posts/", include("apps.posts.urls")),
+    path("notifications/", include("apps.notifications.urls")),
     path("social-auth/", include("social_django.urls", namespace="social")),
 ] + debug_toolbar_urls()
